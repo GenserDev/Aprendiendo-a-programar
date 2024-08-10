@@ -1,0 +1,19 @@
+Subir en la carpeta "Soluciones" la resolución de la Hoja de trabajo #1
+
+
+Instrucciones de como hacer push a la solución .
+
+1. Creas una carpeta dentro de la carpeta "Soluciones" en el formato Nombre-Lenguaje 
+	Ejemplo: Jose-Javascript
+ 
+2. Utilizas el comando " git add . " para guardar los cambios .
+
+3. Utilizas el comando " git commit -m "Descripción del cambio" " para describir brevemente 
+   el archivo y cambios que subiste al repositorio.
+
+4. Utilizar el comando " git push origin main " para subir sus cambios al repositorio.
+
+
+Listo, ya sabes como subir tus soluciones al repositorio !!!
+
+
