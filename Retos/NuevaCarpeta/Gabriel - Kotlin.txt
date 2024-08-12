@@ -1,0 +1,109 @@
+/* Ejercicio No. 01 // Imprimir "Hello World"
+fun main(){
+    println("Hello world")
+}
+
+ */
+
+/* Ejercicio No. 02 // Suma de dos números enteros
+fun main(){
+    println("First number: ")
+    val Number1 = readln().toInt()
+    println("second number: ")
+    val Number2 = readln().toInt()
+
+    println("the sum of $Number1 and $Number2 is ${Number1 + Number2}")
+}
+
+ */
+
+/* Ejercicio No. 03 // Verificacion de numero par o impar
+fun main(){
+    println("Choose a number and I'll tell you what is it: ")
+    val num = readLine()!!.toInt()
+
+    if (num % 2 == 0){
+        print("this number is even")
+    }
+    else{
+        print("this number is not even")
+    }
+}
+
+ */
+
+/* Ejercicio No. 04 // Sortear numeros de mayor a menor
+fun main(){
+    println("First Number: ")
+    val n1 = readln().toInt()
+    println("Second Number: ")
+    val n2 = readln().toInt()
+    println("third Number: ")
+    val n3 = readln().toInt()
+
+    val numbers = mutableListOf(n1,n2,n3)
+
+    println("The number for from highest to lowest are: ${numbers.sortedDescending()}")
+}
+
+ */
+
+/* Ejercicio No. 05 // Numero primo
+fun main() {
+    println("pon un numero: ")
+    val num = readLine()!!.toInt()
+    var flag = false
+    for (i in 2..num / 2) {
+        if (num % i == 0) {
+            flag = true
+            break
+        }
+    }
+
+    if (!flag)
+        println("$num is a prime number.")
+    else
+        println("$num is not a prime number.")
+}
+
+ */
+
+/* Ejercicio No. 06 // Calculadora
+class Calculadora(val num1: Int, val num2: Int) {
+    val suma: Int
+        get() = num1 + num2
+    val resta: Int
+        get() = num1 - num2
+    val multi: Int
+        get() = num1 * num2
+    val div: Int
+        get() = num1 / num2
+}
+
+fun main() {
+    println("Number 1: ")
+    val a = readLine()!!.toInt()
+    println("Number 2: ")
+    val b = readLine()!!.toInt()
+
+    val calculadora = Calculadora(a, b)
+
+    println("Choose an operation: 1. Sumar  2. Restar  3. Multiplicar  4. Dividir")
+    val choice = readLine()!!.toInt()
+
+    when (choice) {
+        1 -> println("Resultado de la suma: ${calculadora.suma}")
+        2 -> println("Resultado de la resta: ${calculadora.resta}")
+        3 -> println("Resultado de la multiplicación: ${calculadora.multi}")
+        4 -> {
+            if (b != 0) {
+                println("Resultado de la división: ${calculadora.div}")
+            } else {
+                println("Error: No se puede dividir por cero.")
+            }
+        }
+        else -> println("Opción no válida.")
+    }
+}
+ */
+
