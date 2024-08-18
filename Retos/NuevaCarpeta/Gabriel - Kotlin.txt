@@ -107,3 +107,98 @@ fun main() {
 }
  */
 
+/*hoja de trabajo No. 2
+
+ */
+
+/* Ejercicio No. 01 // Calculadora de factoriales
+fun calculadoraFactoriales(num: Int): Long {
+    var factorial = 1L
+    for(i in 1..num) {
+        factorial += i
+    }
+    return factorial
+}
+
+fun main(){
+    var num = 1000
+    val res = calculadoraFactoriales(num)
+    println("El factorial de $num es $res")
+}
+ */
+
+/* Ejercicio No. 02 // Secuencia de Fobonacci hasta 50
+fun main(args: Array<String>){
+    val n = 50
+    var num = 0
+    var num2 = 1
+
+    print("Los primeros $n términos son:")
+
+    for(i in 1..n ){
+        print("$num + ")
+
+        val sum = num + num2
+        num = num2
+        num2 = sum
+    }
+}
+ */
+
+/*Ejercicio No. 03 // Lista reversible de tres números
+fun main(){
+    var n1 = Math.random()
+    var n2 = Math.random()
+    var n3 = Math.random()
+
+    val numbers = mutableListOf(n1,n2,n3)
+
+    println("La secuencia de numeros en orden puesto es $numbers y al reverso es ${numbers.reversed()}")
+}
+
+ */
+
+/* Ejercicio No. 04 // Conteo de String en una oración
+fun main(){
+
+    var secuence = "Hello how are you"
+    val words = secuence.split("\\s+".toRegex())
+    val number = words.count()
+
+    println("$secuence has $number words.")
+}
+ */
+
+/* Ejercicio No. 05 // Adivinar el numero aleatorio
+import kotlin.random.Random
+
+fun main(){
+    println("Guess the number: ")
+    var guess = readLine()!!.toInt()
+    var n = Random.nextInt(1, 10)
+
+    do {
+        guess = readLine()?.toInt() ?: continue
+        when{
+            guess > n -> println("muy alto")
+            guess < n -> println("muy bajo")
+            else -> println("Acertaste")
+        }
+    } while(guess != n)
+}
+ */
+
+/* Ejercicio No. 06 // Lista en orden ascendente
+import kotlin.random.Random
+
+fun main(){
+    val n1 = List(10){
+        Random.nextInt(0,10)
+    }
+
+
+    val list = mutableListOf(*n1.toTypedArray())
+
+    println("La lista es $list y en orden es ${list.sorted()}")
+}
+ */
