@@ -17,12 +17,12 @@ function Factorial(){
     console.log("El factorial de "+ num + " es " + factorial)
 
 
-}
+}  
 
 function Fibonacci(){
     var num1 = 0
     var num2 = 1
-    while(num2 <= 50){
+    while(num2 <= 100){
         console.log("Secuencia: " + num1 + " , " + num2)
         num1 = num1 + num2
         num2 = num1 + num2
